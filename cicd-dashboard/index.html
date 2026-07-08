@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android CI/CD Pipeline Dashboard</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+        }
+
+        body{
+            background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+            color:white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+
+        .container{
+            width:85%;
+            max-width:900px;
+            background:rgba(255,255,255,0.08);
+            backdrop-filter:blur(10px);
+            border-radius:18px;
+            padding:45px;
+            box-shadow:0 15px 35px rgba(0,0,0,.4);
+            text-align:center;
+        }
+
+        h1{
+            font-size:40px;
+            margin-bottom:15px;
+        }
+
+        h2{
+            color:#7CFC98;
+            margin-bottom:25px;
+            font-weight:500;
+        }
+
+        p{
+            font-size:18px;
+            line-height:1.8;
+            color:#e2e8f0;
+        }
+
+        .pipeline{
+            margin-top:35px;
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:15px;
+        }
+
+        .step{
+            background:#ffffff15;
+            padding:15px 22px;
+            border-radius:12px;
+            font-weight:bold;
+            font-size:17px;
+            transition:.3s;
+        }
+
+        .step:hover{
+            background:#22c55e;
+            transform:translateY(-4px);
+        }
+
+        .status{
+            margin-top:35px;
+            font-size:22px;
+            color:#7CFC98;
+            font-weight:bold;
+        }
+
+        footer{
+            margin-top:40px;
+            font-size:14px;
+            color:#cbd5e1;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🚀 Android CI/CD & Cloud Deployment Pipeline</h1>
+
+    <h2>Build Successfully Completed</h2>
+
+    <p>
+        This project demonstrates a complete Android Continuous Integration
+        and Continuous Deployment (CI/CD) workflow using modern DevOps tools.
+    </p>
+
+    <div class="pipeline">
+
+        <div class="step">📂 GitHub</div>
+
+        <div class="step">⚙ Jenkins</div>
+
+        <div class="step">🤖 Android Build</div>
+
+        <div class="step">📦 APK Generation</div>
+
+        <div class="step">🐳 Docker</div>
+
+        <div class="step">☸ Kubernetes</div>
+
+        <div class="step">☁ AWS EC2</div>
+
+    </div>
+
+    <div class="status">
+        ✅ Pipeline Status : SUCCESS
+    </div>
+
+    <footer>
+        Developed by <strong>Polisetti Veera Dileep</strong><br>
+        Cloud Engineer | DevOps | Android CI/CD Pipeline
+    </footer>
+
+</div>
+
+</body>
+</html>
