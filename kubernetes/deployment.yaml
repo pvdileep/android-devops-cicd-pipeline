@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: android-cicd-dashboard
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: android-cicd-dashboard
+
+  template:
+    metadata:
+      labels:
+        app: android-cicd-dashboard
+
+    spec:
+      containers:
+      - name: android-cicd-dashboard
+
+        image: veru0412/android-cicd-dashboard:v1
+
+        ports:
+        - containerPort: 80
